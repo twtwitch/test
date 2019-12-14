@@ -1,0 +1,236 @@
+.p-
+    &home
+        padding: toRem(4px)
+        +pad-below
+            padding: toRem(2px)
+        &__video
+            width: 90.8%
+            margin: auto
+            +pad-below
+                width: 100%
+            &_set
+                width: 100%
+                height: auto
+                border-radius: toRem(10px)
+                border: toRem(5px) black solid
+                border-color: #000000
+                filter: contrast(0.8)
+        &__subnav
+            margin-top: toRem(32px)
+            max-width: 90%
+            margin-right: auto
+            margin-left: auto
+            +pad-below
+                margin-top: 0.5rem !important
+                top: 0
+                max-width: span(12)
+                flex: 0 0 span(12)
+            ul
+                width: 100%
+                li
+                    transition: 0.5s all
+                    width: 32.33333%    
+                    height: toRem(256px)
+                    +pad-below
+                        height: inherit
+                    a
+                        display: initial
+                        width: 100%
+                        position: relative
+                        height: toRem(256px)
+                        overflow: hidden
+                        cursor: pointer
+                        transition: .3s all
+                        writing-mode: vertical-rl
+                        &:hover .p-home__subnav__flavors__img
+                            filter: blur(0)
+                        &:hover .p-home__subnav__other__img
+                            filter: blur(0)
+                        &:hover .p-home__subnav__kit__img
+                            filter: blur(0)
+            &__mask
+                background: $pink
+                position: absolute
+                top: 0
+                left: 0
+                right: 0
+                bottom: 0
+                opacity: 0.3
+                border-radius: toRem(20px)
+            &__word
+                filter: drop-shadow(1px 0px 10px #FFB6C1)
+                position: relative
+                text-align: center
+                z-index: 99
+                display: flex
+                align-items: center
+                justify-content: center
+                writing-mode: vertical-lr
+                width: 100%
+                color: $white
+                letter-spacing: toRem(8px)
+                font-size: toRem(34px)
+                font-family: 'Noto Sans TC', sans-serif
+                transition: .5s all
+                &:hover
+                    opacity: 0
+                    transition: .5s all
+                p
+                    border-radius: toRem(30px)
+                    transition: .3s all
+                +pad-below
+                    font-size: toRem(30px)
+
+            &__flavors
+                &:hover
+                    transform: scale(1.05)
+                &__img
+                    background-image: url(../material/img/p-home__subnav1.svg)
+                    +subnav-img
+                a
+                    +pad-below
+                        height: toRem(180px) !important
+            &__other
+                margin: toRem(0px) toRem(12px)
+                +pad-below
+                    margin: toRem(0px) toRem(9px)
+                +mobile
+                    margin: toRem(0px) toRem(6px)    
+                &:hover
+                    transform: scale(1.05)
+                &__img                        
+                    background-image: url(../material/img/p-home__subnav2.svg)
+                    +subnav-img
+                a
+                    +pad-below
+                        height: toRem(180px) !important
+            &__kit
+                &:hover
+                    transform: scale(1.05)
+                &__img                       
+                    background-image: url(../material/img/p-home__subnav3.svg)
+                    +subnav-img
+                a
+                    +pad-below
+                        height: toRem(180px) !important
+        &__introduction
+            margin-top: toRem(64px)
+            +desktop-below
+                margin-top: toRem(32px)
+            +pad-below
+                margin-top: toRem(10px)
+            &__box
+                background: bisque
+                margin-bottom: toRem(128px)
+                +desktop-below
+                    margin-bottom: inherit
+                    div
+                        div
+                            +desktop-below
+                                justify-content: center
+
+            &__img
+                flex: 0 0 span(6)
+                margin-top: toRem(-24px)
+                margin-bottom: toRem(-24px)
+                +desktop-below
+                    margin-top: inherit
+                    margin-bottom: inherit
+                    flex: 0 0 100%
+                &__pic
+                    border-radius: toRem(10px)
+                    background-image: url(../material/img/p-home__introduction1.svg)
+                    height: toRem(528px)
+                    background-position: center center
+                    background-size: cover
+                    filter: drop-shadow(4px 5px 3px #333) saturate(0.8)
+                    +desktop-below
+                        height: toRem(250px)
+                        filter: drop-shadow(1px 3px 2px #333) saturate(0.8)
+                &__pic2
+                    border-radius: toRem(10px)
+                    background-image: url(../material/img/p-home__introduction2.svg)
+                    height: toRem(528px)
+                    background-position: center center
+                    background-size: cover
+                    filter: drop-shadow(4px 5px 3px #333) saturate(0.8)
+                    +desktop-below
+                        height: toRem(250px)
+                        filter: drop-shadow(1px 3px 2px #333) saturate(0.8)
+
+            &__word
+                flex: 0 0 span(4)
+                height: toRem(480px)
+                padding-top: toRem(32px)
+                line-height: toRem(40px)
+                font-family: 'Noto Serif TC', serif
+                +desktop-below
+                    writing-mode: vertical-rl
+                    flex: 0 0 100%
+                    writing-mode: inherit
+                    height: auto 
+                    line-height: toRem(24px)
+                    padding-top: toRem(16px)
+                    padding-bottom: toRem(16px)
+                    order: 2
+                    text-align: center
+                p
+                    margin-bottom: toRem(32px)
+                    margin-left: toRem(32px)
+                    color: $black
+                    +desktop-below
+                        margin-right: toRem(16px)
+                        margin-left: toRem(16px)
+                        margin-bottom: toRem(16px)
+ 
+            &__title
+                writing-mode: vertical-rl
+                flex: 0 0 span(2)
+                font-size: toRem(40px)
+                margin-top: toRem(-20px)
+                line-height: toRem(136px)
+                font-family: 'Noto Sans TC', sans-serif
+                +desktop-below
+                    margin-top: toRem(-15px)
+                    margin-bottom: toRem(-40px)
+                    writing-mode: inherit
+                    flex: inherit
+                    order: 1
+                p
+                    color: coral
+                    -webkit-text-stroke: toRem(1.2px) black
+                    filter: drop-shadow(2px 3px 1px #333)
+                    +desktop-below
+                        height: toRem(160px)
+                        flex: 0 0 100%
+                        writing-mode: inherit
+                        height: auto 
+                        margin-top: inherit
+                        text-align: center
+        &__map
+            width: 90.8%
+            margin: auto
+            +desktop-below
+                margin-top: toRem(110px)
+            +pad-below
+                margin: inherit
+            &_set
+                margin-top: toRem(-60px)
+                +pad-below
+                    margin-top: toRem(60px)
+                +mobile
+                    margin-top: toRem(10px)
+                iframe
+                    height: toRem(350px)
+                    width: 100%
+                    +mobile
+                        height: toRem(300px)
+
+
+                    
+
+
+
+
+
+                

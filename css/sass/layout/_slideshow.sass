@@ -1,0 +1,35 @@
+.l-
+    &slideshow
+        background: $white
+        margin-top: toRem(60px)
+        padding-bottom: toRem(-10px)
+        +mobile
+            margin-top: toRem(10px)
+        &__box
+            border-style: solid      
+            border-width: 2.5px 2.5px 0px 2.5px      
+            background-color: $black
+        &__array
+            animation-name: slideshow
+            animation-duration: 1.5s
+            height: toRem(102px)
+            &__img
+                background: url(../material/img/l-slideshow1.svg) 
+                +slideshow-img
+            &__img1
+                background:url(../material/img/l-slideshow2.svg) 
+                +slideshow-img
+            &__img2
+                background: url(../material/img/l-slideshow3.svg) 
+                +slideshow-img
+            &__img3
+                background: url(../material/img/l-slideshow4.svg) 
+                +slideshow-img
+            &__img4
+                background: url(../material/img/l-slideshow5.svg) 
+                +slideshow-img
+
+                
+            
+
+                    

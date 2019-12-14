@@ -1,0 +1,183 @@
+.p-
+    &cart
+        &__left
+            flex: 0 0 span(8)
+            max-width: span(8)
+            +desktop-below
+                margin-bottom: toRem(60px)
+                flex: 0 0 span(12)
+                max-width: span(12)
+        &__title
+            font-weight: bold
+            background: #ff6a00
+            text-align: center
+            padding: toRem(16px) toRem(0px)
+            font-size: toRem(24px)
+            font-family: 'Noto Sans TC', sans-serif
+            letter-spacing: 0.15rem
+            +desktop_below
+                margin-bottom: toRem(16px)
+        &__list
+            border-bottom: toRem(1px) solid #EAF0ED
+            padding-bottom: toRem(16px)
+            padding-top: toRem(16px)
+            +pad-below
+                padding-bottom: inherit
+                border-bottom: toRem(1px) solid #d2d2d2
+            &__contentBox
+                flex: 4
+                +pad-below
+                    margin-bottom: toRem(16px)
+                &__img
+                    flex: 1
+                    background-position: center center
+                    background-size: cover
+                    height: toRem(147px)
+                    +desktop-below
+                        flex: initial !important
+                        height: toRem(147px)
+                        width: toRem(180px)
+                        margin-left: toRem(15px)
+                    +pad-below
+                        margin-left: toRem(20px)
+                        height: toRem(220px)
+                        width: toRem(260px)
+                        flex: 1.5
+                    +mobile 
+                        width: toRem(180px)
+                &__content
+                    flex: 2
+                &__name
+                    flex: 1
+                    padding: toRem(24px)
+                    font-family: 'Noto Serif TC', serif
+                    align-items: center
+                    display: grid
+                    +desktop-below
+                        text-align: center
+                    +pad-below
+                        flex: 2 !important
+                        padding: toRem(8px) toRem(32px) toRem(0px) toRem(32px)
+                    span
+                        text-align: center
+                        font-size: toRem(20px)
+                        padding-bottom: toRem(4.5px)
+                &__num
+                    flex: 1
+                    align-items: center
+                    padding: toRem(24px) 0px toRem(24px) 0px
+                    +pad-below
+                        margin: toRem(8px) 0px
+                        padding: inherit
+                        justify-content: center !important
+                    input,button
+                        color: $white
+                        background: $black
+                        padding: 0
+                        display: block
+                        height: toRem(48px)
+                        line-height: toRem(48px)
+                        flex: 1
+                        border: toRem(1px) solid $white
+                        text-align: center
+                        transition: 0.3s all
+                        width: toRem(40px)
+                        +pad-below
+                            flex: 0 0 toRem(48px)
+                    button
+                        cursor: pointer
+                        &:active,&:hover,&:focus
+                            border: toRem(1px) solid transparent
+                            transition: 0.3s all
+                            background: #9e0000
+                            color: $black
+                            outline: none
+            &__total
+                flex: 1.5
+                padding: toRem(24px) toRem(4px) toRem(24px) toRem(11px)
+                button
+                    margin-left: toRem(7px)
+                    i
+                        font-size: toRem(20px)
+                label
+                    +desktop-below
+                        margin-right: toRem(-80px)
+                        margin-left: toRem(-80px)
+                    +pad-below
+                        margin-right: initial
+                        margin-left: initial
+                span
+                    +pad-below
+                        padding-right: toRem(16px)        
+                +desktop-below
+                    padding-left: 100px
+                    justify-content: space-around !important
+                +pad-below
+                    padding: initial !important
+                    margin-left: 20% !important
+                    margin-right: 20% !important
+                    border-top: toRem(1px) solid #9c9c9c
+                    justify-content: center !important
+                    
+        &__right
+            flex: 0 0 span(4)
+            max-width: span(4)
+            +desktop-below
+                flex: 0 0 span(8)
+                max-width: span(8)
+            &__title
+                color: #565656
+                padding-top: toRem(16px) 
+                padding-bottom: toRem(16px) 
+                font-size: toRem(22px) 
+                background: #fdefdb
+                text-align: center
+                font-family: 'Noto Sans TC', sans-serif
+                border-radius: toRem(20px)  toRem(20px)  0px 0px
+                letter-spacing: toRem(4px) 
+            &__detail
+                font-weight: bold
+                border: toRem(1px)  solid #EAF0ED
+                padding: toRem(16px) 
+                font-family: 'Noto Sans TC', sans-serif
+                li
+                    margin-bottom: toRem(12px) 
+                &__total,&__freight
+                    font-size: toRem(18px) 
+                    color: #565656
+                &__totalprice
+                    font-weight: bold
+                    margin-top: toRem(27px) 
+                    font-size: toRem(22px) 
+                &_value
+                    &::after
+                        content: ' NT$'
+            
+            &__submit
+                display: none
+                letter-spacing: toRem(1.5px)
+                display: block
+                background: $black
+                color: $white
+                font-size: toRem(24px)
+                font-weight: bold
+                text-align: center
+                padding: toRem(14px)
+                font-family: 'Noto Serif TC', serif
+                width: -webkit-fill-available
+                border: toRem(1px)  solid transparent
+                &:hover,&:active
+                    box-shadow: toRem(1px)  toRem(4px)  toRem(6px)  toRem(1px)  rgba(20%,20%,20%,0.3)
+                    background-color: #FFFFFF
+                    transition: all .3s ease-out
+                    color: #000000
+                    border: 0.5px solid
+.name-en,.price
+    font-size: toRem(26px)  !important
+    font-family: 'Teko', sans-serif
+    &::after
+        content: ' NT$'
+    +pad-below
+        padding: toRem(4px)  toRem(5px)  0px toRem(5px) 
+
+            

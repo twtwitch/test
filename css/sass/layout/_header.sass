@@ -1,0 +1,161 @@
+.l-
+    &header
+        margin-bottom: toRem(10px)
+        +pad-below
+            border-radius: inherit
+        &__bars
+            +pad-below
+                padding-left: toRem(28px) !important
+                z-index: 2
+                display: block
+                position: relative
+                transform: rotate(0deg)
+                transition: 0.3s all
+                cursor: pointer
+                +mobile
+                    padding-left: toRem(16px) !important
+                &:hover
+                    color: $white
+                    border-radius: toRem(40px)
+                span
+                    display: block
+                    position: absolute
+                    height: toRem(4px)
+                    width: toRem(32px)
+                    background: #ff8181
+                    border-radius: toRem(9px)
+                    opacity: 1
+                    left: toRem(32px)
+                    transform: rotate(0deg)
+                    transition: .15s ease-in-out
+                    &:nth-child(1) 
+                        top: toRem(28px)
+                    &:nth-child(2),&:nth-child(3) 
+                        top: toRem(36px)
+                    &:nth-child(4) 
+                        top: toRem(44px)
+                &__panel
+                    display: none
+                    position: fixed
+                    z-index: 1
+                    top: 0
+                    left: 0
+                    background: #ff79ab
+                    height: toRem(80px)
+                    transition: left 0.5s ease
+                    user-select: none
+                    border: 7px solid #ffadb9
+                    border-radius: 0px 20px 20px 0px
+                    a
+                        font-weight: bold
+                        width: 33.333%
+                        margin-top: toRem(18px)           
+                        font-family: 'Noto Sans TC', sans-serif
+                        font-size: toRem(25px)
+                        color: $white
+                        display: block
+                        &:hover
+                            animation-duration: 0.5s
+                            animation-name: rubberBand
+                &__panel.open
+                    animation-duration: 0.5s
+                    animation-name: slideInLeft
+                    text-align: center
+                    display: -webkit-box !important
+                    width: 100%
+                    padding-left: toRem(80px)
+        &__cart,&__bars
+            +pad-below
+            padding-left: toRem(60px)
+            padding-right: toRem(56px)
+            line-height: toRem(80px)
+            height: toRem(80px)
+        &__bars.open span
+            &:nth-child(1)
+                top: toRem(35px)
+                width: 0%
+                left: toRem(55px)
+            &:nth-child(2)
+                -webkit-transform: rotate(45deg)
+                -moz-transform: rotate(45deg)
+                -o-transform: rotate(45deg)
+                transform: rotate(45deg)
+                background: $white
+            &:nth-child(3)
+                -webkit-transform: rotate(-45deg)
+                -moz-transform: rotate(-45deg)
+                -o-transform: rotate(-45deg)
+                transform: rotate(-45deg)
+                background: $white 
+            &:nth-child(4)
+                top: toRem(35px)
+                width: 0%
+                left: toRem(55px)
+           
+        &__logo
+            width: toRem(219px)
+            height: toRem(100px)
+            margin-left: toRem(15px)
+            &:hover
+                animation-name: title
+                transition-duration: 0.5s
+            a 
+                display: block
+                background: url(../material/img/l-header__logo.png) no-repeat 50% 50%
+                width: toRem(219px)
+                height: toRem(100px)
+                background-size: contain
+            +pad-below
+                margin: auto
+                width: inherit
+                height: toRem(80px)
+                +mobile
+                    height: toRem(80px)
+                    width: inherit !important
+                a 
+                    background: url(../material/img/l-header__logo.png) no-repeat 50% 50%
+                    width: toRem(136px)
+                    height: toRem(80px)
+                    background-size: contain
+        &__menu
+            margin-left: auto !important
+            li
+                padding-right: toRem(10px)
+                padding-left: toRem(10px)
+        &__menu a,&__cart
+                border: 3px solid #ffadb9
+                color: $white   
+                display: block
+                font-family: 'Noto Sans TC', sans-serif
+                font-size: toRem(20px)
+                line-height: toRem(27px)
+                height: toRem(36px)
+                padding-left: toRem(24px)
+                padding-right: toRem(24px)
+                transition: 0.3s all
+                font-weight: bold
+                background: #ff79ab
+                border-radius: toRem(40px)
+                letter-spacing: 0.25rem
+                +mobile
+                    padding-left: toRem(16px)
+                    padding-right: toRem(16px)
+                &:hover,&:active
+                    border-radius: toRem(40px)
+                    animation-duration: 0.5s
+                    animation-name: rubberBand
+        &__cart
+            margin-right: toRem(16px) !important
+            i
+                padding-left: toRem(5.5px)
+                padding-right: toRem(5.5px)
+        .col-row
+            height: toRem(100px)
+            +pad-below
+                height: toRem(80px)
+        .fa-bars
+            cursor: pointer
+          
+
+    
+   

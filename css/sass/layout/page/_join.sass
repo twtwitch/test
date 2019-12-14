@@ -1,0 +1,93 @@
+.p-
+    &join
+        max-width: span(10)
+        flex: 0 0 span(10)
+        margin: toRem(30px) auto
+        justify-content: center !important 
+        +desktop-below
+            +pad-below
+                justify-content: center
+                display: flex
+                margin-bottom: toRem(16px)
+                margin-top: toRem(32px)
+        &__content
+            max-width: span(6 of 10)
+            flex: 0 0 span(6 of 10)
+            margin: 0 auto
+            border: 4px solid #E0E0E0
+            background: #f39810
+            border-radius: toRem(20px) toRem(20px) 0px 0px
+            +pad-below
+                max-width: 70%
+                flex: 0 0 100%
+                +mobile
+                    max-width: 100%
+            &__block
+                padding-right: toRem(30px)
+                padding-left: toRem(30px)   
+                padding-bottom: toRem(45px)
+                +pad-below
+                    padding-left: toRem(32px)
+                    padding-right: toRem(32px)
+                &__title
+                    letter-spacing: toRem(2.5px)
+                    color: $white
+                    text-align: center
+                    margin-top: toRem(40px)
+                    margin-bottom: toRem(40px)
+                    font-family: 'Noto Sans TC', sans-serif
+                    font-size: toRem(32px)
+                    filter: drop-shadow(0px 1px 10px #FFC295)
+                    +pad-below
+                        margin-top: 1.875rem
+                        margin-bottom: 1.875rem
+        &__form
+            &__account
+                background: $white
+                height: toRem(56px)
+                position: relative
+                flex-grow: 1
+                margin-bottom: toRem(16px)
+                +desktop-below
+                    max-width: 100%
+            &__icon 
+                position: absolute
+                top: toRem(16px)
+                left: toRem(16px)
+                top: toRem(20px)
+            &__text
+                transition: 0.5s
+                color: $black
+                border: none
+                background: none
+                margin-left: toRem(48px)
+                width: -webkit-fill-available
+                font-size: toRem(22px)
+                font-family: 'Righteous', cursive
+                padding-left: toRem(10px)
+                input
+                    font-family: 'Righteous', cursive
+                +desktop-below 
+                    width: 100%
+                &:focus
+                    transition: 0.5s
+                    background:#ffeed5
+            &__submit
+                    letter-spacing: toRem(1.5px)
+                    display: block
+                    background: $black
+                    color: $white
+                    font-size: toRem(24px)
+                    font-weight: bold
+                    text-align: center
+                    padding: toRem(14px)
+                    transition: 0.4s all
+                    font-family: 'Noto Serif TC', serif
+                    width: -webkit-fill-available
+                    border: 1px solid transparent
+                    &:hover,&:active
+                            box-shadow: 1px 4px 6px 1px rgba(20%,20%,20%,0.3)
+                            background-color: #FFFFFF
+                            transition: all .4s ease-out
+                            color: #000000
+                            border: 0.5px solid

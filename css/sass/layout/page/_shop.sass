@@ -1,0 +1,179 @@
+.p-
+    &shop
+        &__img
+            margin-bottom: toRem(60px)
+            +desktop-below
+                margin-bottom: toRem(28px)
+            div
+                transform: scale(0.9)
+                margin: auto
+                border: 3px solid #000000
+                background-position: center center
+                background-image: url(../material/img/p-shop__container.svg)
+                width: 100%
+                height: toRem(512px)
+                border-radius: toRem(10px)
+                filter: contrast(0.8)
+                +desktop-below
+                    height: toRem(480px)
+                +mobile
+                    background-size: cover
+                    height: toRem(436px)
+        &__container
+            +desktop-below
+                justify-content: center
+            &__left
+                max-width: span(4)
+                flex: 0 0 span(4)
+                +desktop-below
+                    max-width: 55%
+                    flex: 0 0 100%
+                    margin-bottom: toRem(32px)
+                +pad-below
+                    max-width: 100%
+                &__tltle
+                    background: #8b0000
+                    color: $white
+                    text-align: center
+                    font-size: toRem(24px)
+                    padding: toRem(16px)
+                    font-family: 'Noto Sans TC', sans-serif
+                    border-radius: toRem(20px) toRem(20px) 0px 0px
+                    letter-spacing: toRem(5px)
+                    p
+                        filter: drop-shadow(2px 1px 0px black)
+                &__menu
+                    cursor: pointer
+                    text-align: center
+                    li
+                        a
+                            border: toRem(1px) solid $black
+                            font-size: toRem(24px)
+                            padding: toRem(16px)
+                            display: block
+                            font-family: 'Noto Serif TC', serif
+                            transition: all .2s ease-in-out
+                            &:hover,&:active,&:focus 
+                                color: $black
+                                filter: drop-shadow(0px 2px 3px black)
+                                background: #ffc184
+                                font-size: toRem(28px)
+                &__present
+                    font-family: 'Noto Sans TC', sans-serif !important
+                    color: $white !important
+                    font-weight: bold !important
+                    background: #ff6a00 !important
+                    font-size: 1.75rem !important
+                    filter: drop-shadow(0px 1px 2px black) !important
+            &__right
+                max-width: span(8)
+                flex: 0 0 span(8)
+                +desktop-below
+                    max-width: 75%
+                    flex: 0 0 100%
+                +pad-below
+                    max-width: 100%
+                li
+                    flex: 0 0 span(4 of 8)
+                    max-width: 0 0 span(4 of 8)
+                    margin-bottom: toRem(40px)
+                    +desktop-below
+                        max-width: 0 0 span(8 of 8)
+            &__img
+                height: 19.6875rem
+                position: relative
+                background-size: cover
+                background-position: center center
+                filter: contrast(0.9)
+                +desktop-below
+                    height: toRem(480px)
+                    +pad-below
+                        height: toRem(260px)
+                &__tag
+                    font-family: 'Noto Serif TC', serif
+                    writing-mode: vertical-lr
+                    position: absolute
+                    left: 1.25rem
+                    top: 0
+                    padding: toRem(16px) 0.625rem
+                    letter-spacing: 0.3125rem
+                    color: $white
+                    background-color: #8b0000
+                &__like
+                    color: #da0000
+                    position: absolute
+                    right: toRem(20px)
+                    top: toRem(16px)
+                    font-size: toRem(32px)
+                    cursor: pointer
+            &__item
+                text-align: center
+                font-size: toRem(24px)
+                border: toRem(1px) solid $black
+                font-family: 'Noto Sans TC', sans-serif
+                +desktop-below
+                    font-size: toRem(28px)
+                &__name
+                    background: #ffd403
+                    padding: toRem(16px) 0rem
+                    border-right: toRem(1.5px) solid $black
+                    font-family: 'Noto Sans TC', sans-serif
+                &__price
+                    padding: toRem(16px)
+                    font-family: 'Hind Vadodara', sans-serif
+                    color: #860000
+                    font-size: toRem(28px)
+                    +desktop-below
+                        font-size: toRem(26px)
+            &__btn
+                &__word
+                    color: $white !important
+                    background: $black
+                    text-align: center
+                    padding: toRem(16px)
+                    display: block
+                    font-size: toRem(26px)
+                    font-weight: bold
+                    transition: all .2s ease-in-out
+                    cursor: pointer
+                    font-family: 'Noto Sans TC', sans-serif
+                    &:hover,&:active,&:focus    
+                        background: #ffa5a5
+                        font-size: toRem(28px)
+            &__pagination
+                li
+                    flex: inherit
+                &_link
+                    cursor: pointer
+                    padding: 0.75rem 1.5rem
+                    font-size: 1.25rem
+                    position: relative
+                    display: block
+                    margin-left: -1px
+                    color: $white
+                    background-color: $black
+                    border: 1px solid #dee2e6
+                    transition: all .2s ease-in-out
+                    font-family: 'Righteous', cursive
+                    &:hover,&:active,&:focus,&_active
+                        background: #ffa5a5
+                        color: $white
+                        margin-left: toRem(2.5px)
+                        margin-right: toRem(2.5px)
+                &_link.active,&_present
+                    background: #ca0000
+                    padding: 0.75rem 1.5rem
+                    font-size: 1.25rem
+                    position: relative
+                    display: block
+                    margin-left: -1px
+                    color: $white
+                    border: 1px solid #dee2e6
+                    transition: all .2s ease-in-out
+                    font-family: 'Righteous', cursive
+
+.click
+    font-weight: bold !important
+    animation-duration: 0.3s
+    animation-name: like
+                    

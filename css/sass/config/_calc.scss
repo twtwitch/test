@@ -1,0 +1,5 @@
+$pixel: 16px;
+
+@function toRem($unit) {
+  @return ($unit / $pixel) * 1rem;
+}

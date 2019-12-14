@@ -1,0 +1,172 @@
+.p-
+    &login
+        max-width: span(10)
+        flex: 0 0 span(10)
+        margin: toRem(30px) auto 
+        +desktop-below
+            +pad-below
+                justify-content: center
+                display: flex
+                margin-bottom: toRem(16px)
+                margin-top: toRem(32px)
+        &__left
+            border: 4px solid #E0E0E0
+            max-width: 50%
+            flex: 0 0 50%
+            background: #f39810
+            border-radius: toRem(20px) toRem(20px) 0px 0px
+            +pad-below
+                max-width: 70%
+                flex: 0 0 100%
+                +mobile
+                    max-width: 100%
+            &__submit
+                    letter-spacing: toRem(1.5px)
+                    display: block
+                    background: $black
+                    color: $white
+                    font-size: toRem(24px)
+                    font-weight: bold
+                    text-align: center
+                    padding: toRem(14px)
+                    transition: 0.2s all
+                    font-family: 'Noto Serif TC', serif
+                    width: -webkit-fill-available
+                    border: 1px solid transparent
+                    &:hover,&:active
+                            box-shadow: 1px 4px 6px 1px rgba(20%,20%,20%,0.3)
+                            background-color: #FFFFFF
+                            transition: all .3s ease-out
+                            color: #000000
+                            border: 0.5px solid
+            &__block
+                padding-right: toRem(30px)
+                padding-left: toRem(30px)
+                +pad-below
+                    padding-left: toRem(32px)
+                    padding-right: toRem(32px)
+                &__title
+                    letter-spacing: toRem(2.5px)
+                    color: $white
+                    text-align: center
+                    margin-top: toRem(40px)
+                    margin-bottom: toRem(40px)
+                    font-family: 'Noto Sans TC', sans-serif
+                    font-size: toRem(32px)
+                    filter: drop-shadow(0px 1px 10px #FFC295)
+                    +pad-below
+                        margin-top: 1.875rem
+                        margin-bottom: 1.875rem
+        &__form
+            &__account
+                background: $white
+                height: toRem(56px)
+                position: relative
+                flex-grow: 1
+                margin-bottom: toRem(16px)
+                +desktop-below
+                    max-width: 100%
+            &__icon 
+                position: absolute
+                top: toRem(16px)
+                left: toRem(16px)
+                top: toRem(20px)
+            &__text
+                transition: 0.5s
+                color: $black
+                border: none
+                background: none
+                margin-left: toRem(48px)
+                width: -webkit-fill-available
+                font-size: toRem(22px)
+                font-family: 'Righteous', cursive
+                padding-left: toRem(10px)
+                input
+                    font-family: 'Righteous', cursive
+                +desktop-below 
+                    width: 100%
+                &:focus
+                    transition: 0.5s
+                    background:#ffeed5
+            &__remember
+                font-size: toRem(16px)
+                color: $white
+                margin-bottom: toRem(16px)
+                font-family: 'Noto Serif TC', serif
+                input
+                    margin-top: toRem(6px)
+                label
+                    font-weight: bold
+            &__join
+                float: right
+                font-family: 'Noto Serif TC', serif
+                padding: toRem(3.5px)
+                border: 0.5px solid
+                background: $white
+                color: deeppink
+                transition: 0.3s all
+                font-weight: bold
+                &:hover
+                    color: #ff0000 !important
+                    animation-duration: 0.5s  
+                    animation-name: rubberBand              
+        &__right
+            max-width: 50%
+            flex: 0 0 50%
+            background: #fdefdb
+            margin-top: toRem(16px)
+            margin-bottom: toRem(16px)
+            padding-left: toRem(30px)
+            padding-right: toRem(30px)
+            border-radius: 0px toRem(10px) toRem(10px) 0px
+            +pad-below
+                border-radius: 0px 0px toRem(10px) toRem(10px)
+                margin-top: initial
+                flex: 0 0 100%
+                max-width: 70%
+                +mobile
+                    max-width: 100%
+            &__title
+                font-family: 'Noto Sans TC', sans-serif
+                color: #565656
+                font-size: toRem(24px)
+                text-align: center
+                margin-top: toRem(40px)
+                margin-bottom: toRem(40px)
+                letter-spacing: toRem(4px)
+                +desktop-below
+                    letter-spacing: initial
+                +pad-below
+                    display: none
+            &__oauch
+                +pad-below
+                    padding-top: toRem(16px)
+                    display: flex
+                    width: 100%
+                li
+                    +pad-below
+                        display: inline-block
+                        width: 33.3333%
+                    a
+                        font-family: 'Noto Serif TC', serif
+                        display: flex
+                        height: toRem(56px)
+                        align-items: center
+                        justify-content: center
+                        background: #fff
+                        margin-bottom: toRem(16px)
+                        transition: 0.4s all
+                        font-weight: bold
+                        color: #ff5200
+                        border-radius: toRem(24px)
+                        +pad-below
+                            margin-right: toRem(5px)
+                            margin-left: toRem(5px)
+                        &:hover,&:active,&:focus
+                            background: $white
+                            transition: 0.3s all
+                            filter: drop-shadow(0px 3px 2px #ff5200)
+                            animation-name: rubberBand
+                            animation-duration: 0.4s
+
+                        

@@ -1,0 +1,107 @@
+.v-{
+    &none {
+      display: none !important;
+    }
+    
+    &inline {
+      display: inline !important;
+    }
+    
+    &inline-block {
+      display: inline-block !important;
+    }
+    
+    &block {
+      display: block !important;
+    }
+    
+    &table {
+      display: table !important;
+    }
+    
+    &table-row {
+      display: table-row !important;
+    }
+    
+    &table-cell {
+      display: table-cell !important;
+    }
+    
+    &flex {
+      display: -ms-flexbox !important;
+      display: flex !important;
+    }
+    
+    &inline-flex {
+      display: -ms-inline-flexbox !important;
+      display: inline-flex !important;
+    }
+
+    &box{
+      display: -webkit-box !important;
+    }
+    
+    @media (max-width: 1023px) {
+      &lg-none {
+        display: none !important;
+      }
+      &lg-inline {
+        display: inline !important;
+      }
+      &lg-inline-block {
+        display: inline-block !important;
+      }
+      &lg-block {
+        display: block !important;
+      }
+      &lg-table {
+        display: table !important;
+      }
+      &lg-table-row {
+        display: table-row !important;
+      }
+      &lg-table-cell {
+        display: table-cell !important;
+      }
+      &lg-flex {
+        display: -ms-flexbox !important;
+        display: flex !important;
+      }
+      &lg-inline-flex {
+        display: -ms-inline-flexbox !important;
+        display: inline-flex !important;
+      }
+    }
+    
+    @media (max-width: 767px) {
+      &md-none {
+        display: none !important;
+      }
+      &md-inline {
+        display: inline !important;
+      }
+      &md-inline-block {
+        display: inline-block !important;
+      }
+      &md-block {
+        display: block !important;
+      }
+      &md-table {
+        display: table !important;
+      }
+      &md-table-row {
+        display: table-row !important;
+      }
+      &md-table-cell {
+        display: table-cell !important;
+      }
+      &md-flex {
+        display: -ms-flexbox !important;
+        display: flex !important;
+      }
+      &md-inline-flex {
+        display: -ms-inline-flexbox !important;
+        display: inline-flex !important;
+      }
+    }
+  }
